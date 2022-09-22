@@ -1,0 +1,45 @@
+keras-preprocessing (1.1.0+ds-1) unstable; urgency=medium
+
+  [ Stephen Sinclair ]
+  * New upstream version 1.1.0.
+  * debian/watch:
+    + add dversionmangle for +ds suffix.
+  * debian/control:
+    + update standard version to 4.5.0 (no changes).
+    + add build-dep on python3-six.
+
+  [ Anton Gladky ]
+  * [5945435] Apply cme fix dpkg
+  * [4a0786f] Use secure URI in Homepage field.
+  * [09a4468] Bump debhelper from old 11 to 12.
+  * [4fa23f7] Set upstream metadata fields: Bug-Database, Bug-Submit.
+
+ -- Stephen Sinclair <radarsat1@gmail.com>  Fri, 20 Mar 2020 15:55:44 +0000
+
+keras-preprocessing (1.0.9-1) unstable; urgency=medium
+
+  * New upstream version 1.0.9.
+  * debian/copyright:
+    + exclude *.pyc files found in archive.
+  * debian/control:
+    + add build-dep on python3-numpy.
+
+ -- Stephen Sinclair <radarsat1@gmail.com>  Sat, 20 Apr 2019 11:01:32 +0000
+
+keras-preprocessing (1.0.5-1) unstable; urgency=medium
+
+  * Upload to unstable.
+  * New upstream version 1.0.5.
+  * debian/control:
+    + enable DH_VERBOSE=1.
+    + update standards version to 4.3.0.
+  * debian/copyright:
+    + extend copyright span to 2019.
+
+ -- Stephen Sinclair <radarsat1@gmail.com>  Wed, 16 Jan 2019 21:37:41 +0000
+
+keras-preprocessing (1.0.2-1) experimental; urgency=medium
+
+  * Initial release (Closes: #902390).
+
+ -- Stephen Sinclair <radarsat1@gmail.com>  Sat, 11 Aug 2018 18:26:44 -0400

@@ -1,0 +1,18 @@
+#!/bin/sh
+
+set -e
+
+# python3.Y at build time, python3 at CI time
+PYINTERPRETER=${PYINTERPRETER:-python3}
+
+# Python module successfully imported
+${PYINTERPRETER} -c 'import keras_preprocessing'
+
+# Exercise one function of the library
+${PYINTERPRETER} -c 'import numpy as np
+from keras_preprocessing import text
+encoded = text.one_hot("The cat sat on the mat.", 5)
+assert len(encoded) == 6
+assert np.max(encoded) <= 4
+assert np.min(encoded) >= 1
+'

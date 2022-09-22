@@ -1,0 +1,45 @@
+Source: keras-preprocessing
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Uploaders: Stephen Sinclair <radarsat1@gmail.com>
+Section: science
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               dh-python,
+               python3-all,
+               python3-setuptools,
+               python3-distutils,
+               python3-numpy,
+               python3-six
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/science-team/keras-preprocessing
+Vcs-Git: https://salsa.debian.org/science-team/keras-preprocessing.git
+Homepage: https://keras.io/
+X-Python3-Version: >= 3.6
+
+Package: python3-keras-preprocessing
+Architecture: all
+Section: python
+Depends: ${misc:Depends},
+         ${python3:Depends}
+Recommends: python3-keras
+Description: data preprocessing module for the Keras deep learning framework
+ Keras is a Python library for machine learning based on deep (multi-
+ layered) artificial neural networks (DNN), which follows a minimalistic
+ and modular design with a focus on fast experimentation.
+ .
+ Features of DNNs like neural layers, cost functions, optimizers,
+ initialization schemes, activation functions and regularization schemes
+ are available in Keras a standalone modules which can be plugged together
+ as wanted to create sequence models or more complex architectures.
+ Keras supports convolutions neural networks (CNN, used for image
+ recognition resp. classification) and recurrent neural networks (RNN,
+ suitable for sequence analysis like in natural language processing).
+ .
+ It runs as an abstraction layer on the top of Theano (math expression
+ compiler) by default, which makes it possible to accelerate the computations
+ by using (GP)GPU devices. Alternatively, Keras could run on Google's
+ TensorFlow (not yet available in Debian).
+ .
+ Keras Preprocessing is the data preprocessing and data augmentation
+ module of the Keras deep learning library. It provides utilities for
+ working with image data, text data, and sequence data.
